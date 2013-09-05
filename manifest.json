@@ -1,0 +1,26 @@
+{  "background": {
+      "page": "html/background.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/styles.css" ],
+      "js": [ "js/jquery.js", "js/redesign.js" ],
+      "matches": [ "*://*.habrahabr.ru/*" ]
+   } ],
+   "browser_action": {
+      "default_icon": "icon/habr.png",
+      "default_popup": "html/popup.html"
+   },
+   "icons": {
+      "128": "icon/habr.png",
+      "16": "icon/habr16.png",
+      "32": "icon/habr32.png",
+      "64": "icon/habr64.png"
+   },
+   "manifest_version": 2,
+   "name": "DenimHabr",
+   "options_page": "html/options.html",
+   "permissions": [ "tabs", "*://*.habrahabr.ru/*", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1",
+   "web_accessible_resources": [ "html/*", "js/jquery-2.0.3.min.map" ]
+}

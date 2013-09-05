@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/popup.css" type="text/css">
+    <script src="/js/popup.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div id="header">
+            <div class="icon" style="margin:0px 10px 5px 0px;">
+                <a id="linkicon" href="#"><img src="" alt="avatar"></a>
+            </div>
+            <div class="info">
+                <div>
+                    <a id="linkname" href="#"><span id="name"></span></a>
+                </div>
+
+            </div>                
+            <div class="stats" style="float: right;">
+                <div class="karma">
+                    <div class="label">карма</div>
+                    <div class="score">
+                        <span id="karma" class="value"></span>                               
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="label">рейтинг</div>
+                    <span id="rating" class="value"></span>
+                    <div class="label"><span class="label">позиция</span> <span id="position" class="value"></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="sections" class="block">
+            <!-- <div class="block-title">Моё</div> -->
+            <div id="icons">
+                <a id="icon-posts" class="icon-posts" title="Посты" href="#">Посты</a>
+                <a id="icon-questions" class="icon-questions" title="Q&A" href="#">Q&A</a>
+                <a id="icon-comments" class="icon-comments" title="Комментарии" href="#">Комментарии</a>
+                <a id="icon-notes" class="icon-notes" title="Заметки" href="#">Заметки</a>
+                <div style="float:right;">
+                    <a id="icon-favorites" class="icon-favorites" title="Избранное" href="#">Избранное</a>
+                    <a id="icon-mail" class="icon-mail" title="Личная почта" href="#">Личная почта</a>
+                    <a id="icon-settings" class="icon-settings" title="Настройки" href="#">Настройки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="icon-loading">
+    </div>
+    <div id="container" style="display:none;">
+    </div>
+  </body>
+</html>
